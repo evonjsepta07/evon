@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bloom Study Café</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb') no-repeat center center/cover;
+    color: #333;
+}
+
+header {
+    background: rgba(0,0,0,0.65);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    width: 170px;
+    margin-bottom: 12px;
+    filter: brightness(1.2) drop-shadow(0 8px 18px rgba(0,0,0,0.4));
+}
+
+nav {
+    background: rgba(255,255,255,0.95);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #4a00e0;
+}
+
+section {
+    padding: 60px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    margin: 20px auto;
+    width: 75%;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* THEATRE SEATING */
+.screen {
+    background: #ccc;
+    height: 40px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.seat {
+    height: 40px;
+    width: 40px;
+    background: #d1c4e9;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.seat:hover { transform: scale(1.1); }
+
+.seat.selected {
+    background: #8e2de2;
+    color: white;
+}
+
+.seat.booked {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.total-display {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* TIME & SNACK SECTION */
+.time-select { margin-top: 20px; }
+
+.snack-section { margin-top: 30px; }
+
+.snack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.snack-item {
+    background: #f3e5f5;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.snack-item:hover { transform: scale(1.05); }
+
+.snack-item.selected-snack {
+    background: #8e2de2;
+    color: white;
+}
+
+/* STICKERS */
+.sticker {
+    position: fixed;
+    animation: float 6s ease-in-out infinite;
+    z-index: 5;
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+}
+
+.book { top: 15%; left: 3%; width: 200px; }
+.cat { top: 55%; right: 3%; width: 170px; }
+.beans { bottom: 10%; left: 12%; width: 130px; }
+.iced1 { top: 25%; right: 18%; width: 140px; }
+.iced2 { bottom: 15%; right: 20%; width: 140px; }
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+footer {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<img src="bookcoffee.png" class="sticker book">
+<img src="cat.png" class="sticker cat">
+<img src="beans.png" class="sticker beans">
+<img src="iced1.png" class="sticker iced1">
+<img src="iced2.png" class="sticker iced2">
+
+<header>
+    <img src="bloom-logo.png" class="logo">
+    <h1>Bloom Study Café ☕📚</h1>
+    <p>Study • Focus • Relax</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Inside Bloom</a>
+    <a href="#booking">Book Seat</a>
+
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Us</h2>
+        <p>Bloom Study Café is a cozy productivity space designed for students and creators who need focus and comfort.</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="card">
+        <h2>Inside Bloom 🌸</h2>
+        <div class="gallery-grid">
+            <img src="group-study.jpg">
+            <img src="open-cafe.jpg">
+            <img src="study-cubicles.jpg">
+            <img src="library-seating.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="booking">
+    <div class="card">
+        <h2>Book Your Seat 🎟️</h2>
+
+        <input type="text" placeholder="Full Name"><br><br>
+        <input type="email" placeholder="Email Address"><br><br>
+        <input type="date"><br><br>
+
+        <!-- TIME SLOT -->
+        <div class="time-select">
+            <label><strong>Select Time Slot:</strong></label><br><br>
+            <select id="timeSlot">
+                <option value="">Choose Time</option>
+                <option>8 AM – 10 AM</option>
+                <option>10 AM – 12 PM</option>
+                <option>12 PM – 2 PM</option>
+                <option>2 PM – 4 PM</option>
+                <option>4 PM – 6 PM</option>
+                <option>6 PM – 8 PM</option>
+            </select>
+        </div>
+
+        <!-- SNACK SECTION -->
+        <div class="snack-section">
+            <h3>Select Snacks 🍩</h3>
+            <div class="snack-grid">
+                <div class="snack-item" data-price="120">☕ Cold Coffee ₹120</div>
+                <div class="snack-item" data-price="150">☕ Cappuccino ₹150</div>
+                <div class="snack-item" data-price="90">🍫 Brownie ₹90</div>
+                <div class="snack-item" data-price="110">🥪 Sandwich ₹110</div>
+            </div>
+        </div>
+
+        <div class="screen">Study Zone</div>
+        <div class="seat-grid" id="seatGrid"></div>
+
+        <div class="total-display">
+            Selected Seats: <span id="selectedSeats">None</span><br>
+            Total: ₹<span id="totalAmount">0</span>
+        </div>
+
+        <br>
+        <button onclick="confirmBooking()">Confirm Booking</button>
+        <p id="confirmation"></p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact & Location 📍</h2>
+        <p><strong>Address:</strong><br>
+        Bloom Study Café<br>
+        MG Road, Near Metro Station<br>
+        Kochi, Kerala – 682035<br>
+        India</p>
+        <p><strong>Email:</strong> evonjsepta.sacs.10thb@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Bloom Study Café | Designed by Evon
+</footer>
+
+<script>
+const seatGrid = document.getElementById("seatGrid");
+const seatPrice = 100;
+let selectedSeats = [];
+let snackTotal = 0;
+let selectedSnacks = [];
+
+const rows = ["A","B","C","D","E"];
+const cols = 8;
+
+rows.forEach(row => {
+    for(let i=1;i<=cols;i++){
+        const seat=document.createElement("div");
+        seat.classList.add("seat");
+        seat.innerText=row+i;
+
+        seat.addEventListener("click",()=>{
+            if(seat.classList.contains("booked")) return;
+
+            seat.classList.toggle("selected");
+            const seatNo=seat.innerText;
+
+            if(selectedSeats.includes(seatNo)){
+                selectedSeats=selectedSeats.filter(s=>s!==seatNo);
+            } else {
+                selectedSeats.push(seatNo);
+            }
+
+            updateDisplay();
+        });
+
+        seatGrid.appendChild(seat);
+    }
+});
+
+document.querySelectorAll(".snack-item").forEach(snack=>{
+    snack.addEventListener("click",()=>{
+        const price=parseInt(snack.dataset.price);
+        const name=snack.innerText;
+
+        snack.classList.toggle("selected-snack");
+
+        if(selectedSnacks.includes(name)){
+            selectedSnacks=selectedSnacks.filter(s=>s!==name);
+            snackTotal-=price;
+        } else {
+            selectedSnacks.push(name);
+            snackTotal+=price;
+        }
+
+        updateDisplay();
+    });
+});
+
+function updateDisplay(){
+    const seatTotal=selectedSeats.length*seatPrice;
+    document.getElementById("selectedSeats").innerText=
+        selectedSeats.length?selectedSeats.join(", "):"None";
+    document.getElementById("totalAmount").innerText=
+        seatTotal+snackTotal;
+}
+
+function confirmBooking(){
+    const time=document.getElementById("timeSlot").value;
+
+    if(selectedSeats.length===0){
+        alert("Please select at least one seat.");
+        return;
+    }
+
+    if(time===""){
+        alert("Please select a time slot.");
+        return;
+    }
+
+    document.querySelectorAll(".seat.selected").forEach(seat=>{
+        seat.classList.remove("selected");
+        seat.classList.add("booked");
+    });
+
+    document.getElementById("confirmation").innerText=
+        "🎉 Booking Confirmed!\nSeats: "+selectedSeats.join(", ") +
+        "\nTime: "+time +
+        "\nSnacks: "+(selectedSnacks.length?selectedSnacks.join(", "):"None");
+
+    selectedSeats=[];
+    selectedSnacks=[];
+    snackTotal=0;
+    updateDisplay();
+}
+</script>
+
+</body>
+</html>
