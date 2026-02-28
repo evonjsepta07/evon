@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [STUDY CAFE LIBRARY] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [Error 404]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Evon J Septa] - [Albertian Institute Of Science And Technology]
+- Member 2: [Andrea Keny] - [Albertian Institute Of Science And Technology]
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[This project is a website developed for Bloom Study Café Library to manage seat booking and provide essential information. It allows users to check seat availability, book seats online, and view pricing and contact details. The website is designed to be simple, interactive, and user-friendly using basic web development technologies.]
 
 ### The Problem statement
-[What problem are you solving?]
+[Students often struggle to find reliable, distraction-free study environments with guaranteed seating and structured time management. The lack of an affordable digital reservation system for study spaces leads to overcrowding, uncertainty, poor time utilization, and reduced academic productivity.]
 
 ### The Solution
-[How are you solving it?]
+[Bloom Study Café provides a web-based seat reservation system that allows students to book guaranteed study seats with time-slot selection and snack pre-ordering, ensuring a distraction-free and structured study environment.Here s]
 
 ---
 
@@ -31,10 +31,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: JavaScript, Html, CSS
+- Frameworks used: none
+- Libraries used: none
+- Tools used: Notepad,chrome,Chat Gpt
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +46,10 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: arrangement of seats
+- Feature 2: seat booking system
+- Feature 3: digitalise study cafe management
+- Feature 4: user friendly interface
 
 ---
 
