@@ -31,10 +31,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: JavaScript, Html, CSS
-- Frameworks used: none
-- Libraries used: none
-- Tools used: Notepad,chrome,Chat Gpt
+- Languages used: [JavaScript, Html, CSS]
+- Frameworks used: [none]
+- Libraries used: [none]
+- Tools used: [Notepad,chrome,Chat Gpt]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +46,10 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: arrangement of seats
-- Feature 2: seat booking system
-- Feature 3: digitalise study cafe management
-- Feature 4: user friendly interface
+- Feature 1: [arrangement of seats]
+- Feature 2: [seat booking system]
+- Feature 3: [digitalise study cafe management]
+- Feature 4: [user friendly interface]
 
 ---
 
