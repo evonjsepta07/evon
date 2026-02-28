@@ -22,7 +22,7 @@
 [Students often struggle to find reliable, distraction-free study environments with guaranteed seating and structured time management. The lack of an affordable digital reservation system for study spaces leads to overcrowding, uncertainty, poor time utilization, and reduced academic productivity.]
 
 ### The Solution
-[Bloom Study Café provides a web-based seat reservation system that allows students to book guaranteed study seats with time-slot selection and snack pre-ordering, ensuring a distraction-free and structured study environment.Here s]
+[Bloom Study Café provides a web-based seat reservation system that allows students to book guaranteed study seats with time-slot selection and snack pre-ordering, ensuring a distraction-free and structured study environment.]
 
 ---
 
